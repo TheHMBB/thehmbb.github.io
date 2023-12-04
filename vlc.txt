@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "dal4-Hong Kong-akVm", server: 1, port: 443, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: , ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
-  - {name: "dal4-Hong Kong-iu6F", server: ., port: 2096, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: , ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
-  - {name: dal4-Hong Kong-qK4b, server: 8.218.149.104, port: 180, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
-  - {name: dal4-Hong Kong-8OOz, server: 8.210.55.134, port: 8880, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
+  - {name: "dal4-Hong Kong-WYS3", server: 1, port: 443, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: , ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
+  - {name: "dal4-Hong Kong-qBdC", server: ., port: 2096, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: , ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
+  - {name: dal4-Hong Kong-UZHm, server: 8.218.149.104, port: 180, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
+  - {name: dal4-Hong Kong-wtix, server: 8.210.55.134, port: 8880, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,65 +17,65 @@ proxy-groups:
       - ⚖️ 负载均衡-散列
       - ♻️ 自动选择
       - DIRECT
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🎯 全球直连
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,30 +98,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     strategy: round-robin
     proxies:
-      - dal4-Hong Kong-akVm
-      - dal4-Hong Kong-iu6F
-      - dal4-Hong Kong-qK4b
-      - dal4-Hong Kong-8OOz
+      - dal4-Hong Kong-WYS3
+      - dal4-Hong Kong-qBdC
+      - dal4-Hong Kong-UZHm
+      - dal4-Hong Kong-wtix
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 
