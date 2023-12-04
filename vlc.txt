@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HKVls3, server: 132.145.87.158, port: 443, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
-  - {name: HKe6zH, server: 8.218.181.189, port: 2096, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
-  - {name: HKgNeN, server: 8.218.149.104, port: 180, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
-  - {name: HKNhSy, server: 8.210.55.134, port: 8880, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: %2F%3Fed%3D2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
+  - {name: HKVCnk, server: 132.145.87.158, port: 443, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
+  - {name: HKnOKU, server: 8.218.181.189, port: 2096, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: true, tfo: false, servername: dal4.thehmbb.top, skip-cert-verify: True, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: dal4.thehmbb.top}}, udp: true}
+  - {name: HKxIP5, server: 8.218.149.104, port: 180, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
+  - {name: HKmUhO, server: 8.210.55.134, port: 8880, client-fingerprint: random, type: vless, uuid: 4f255343-8396-4bb4-9f94-6e3827cd90c0, tls: false, tfo: false, servername: dal4.helloyqx.workers.dev, skip-cert-verify: True, network: ws, ws-opts: {path: /?ed=2048, headers: {Host: dal4.helloyqx.workers.dev}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,65 +17,65 @@ proxy-groups:
       - ⚖️ 负载均衡-散列
       - ♻️ 自动选择
       - DIRECT
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🎯 全球直连
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,30 +98,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: ⚖️ 负载均衡-散列
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     strategy: consistent-hashing
     proxies:
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     strategy: round-robin
     proxies:
-      - HKVls3
-      - HKe6zH
-      - HKgNeN
-      - HKNhSy
+      - HKVCnk
+      - HKnOKU
+      - HKxIP5
+      - HKmUhO
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 
